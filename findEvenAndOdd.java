@@ -29,7 +29,7 @@ public class findEvenAndOdd{
 								odd[k++] = size[i];
 							}
 				}
-			// print array method
+			// print 
 			        System.out.println("Even Nums : ");
 			    	for(int i = 0 ; i < even.length ; i++){
 							System.out.println(even[i]);
