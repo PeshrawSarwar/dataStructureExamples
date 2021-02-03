@@ -5,19 +5,19 @@ public class binarySearch{
 	int binary_search(double [] nums , int left, int right , double x){
 				//until the index is remain
 				if(right >= left){
-						int mid = left + (right - 1) / 2;
+						int mid = left + (right - left) / 2;
 						//if the number is in the middle index
 						if(nums[mid] == x ){
 								return mid;
 							}
 							//if the number is in the left  side
-							else if(nums[mid] > x){
+							if(nums[mid] > x){
 									return binary_search(nums, left, mid - 1 , x);
 								}
-								//if the umber is in the right side
-								else{
-										return binary_search(nums, mid + 1 , right, x);
-									}
+								//if the number is in the right side
+
+								return binary_search(nums, mid + 1 , right, x);
+
 					}
 				return -1;
 		}
