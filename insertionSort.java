@@ -14,7 +14,7 @@ public class insertionSort{
 		    void sort(int arr[])
 		    {
 		        int n = arr.length;
-		        for (int i = 1; i < n; ++i) {
+		        for (int i = 1; i < n; i++) {
 					//key = number in index 1 .... +1
 		            int key = arr[i];
 
